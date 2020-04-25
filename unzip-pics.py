@@ -34,7 +34,8 @@ def search_and_rename(destination_directory, extension):
     :return:
     """
     # gets all files matching the extension in the current folder and any subfolders
-    for media_file in Path(os.getcwd()).rglob('*' + extension):
+
+    for media_file in Path(os.getcwd() + "/Album/").rglob('*' + extension):
         # check if the file is unaltered (eg first time loaded on the system.
         # this is so that multiple runs don't keep adding extensions on unnecessarily
         if "-" in media_file.name:
@@ -63,9 +64,11 @@ def main():
     create_import_directory(pics_dir_name)
     create_import_directory(vids_dir_name)
 
+    # Search for new media and rename it into the new folder
     search_and_rename(pics_dir_name, PHOTO_EXTENSION)
     search_and_rename(vids_dir_name, VIDEO_EXTENSION)
 
+    print("Media successfully imported!")
 
 if __name__ == '__main__':
     main()

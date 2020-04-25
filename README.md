@@ -18,7 +18,8 @@ In theory this should work with media from other devices; testing is still pendi
 3. Copy the "Album" folder from the Switch's SD card (Nintendo -> Album) into the new folder
     - if you only want to import specific files or folders, just add them under a folder called "Album"
 4. Run the script
-    - #####Note that this moves everything from your Album folder!
+
+    -**Note that this moves everything from your Album folder!**
 5. By default, two new folders are generated:
     - YYYY-MM-DD-Photo-Import
     - YYYY-MM-DD-Video-Import

@@ -14,7 +14,7 @@ In theory this should work with media from other devices; testing is still pendi
 
 ## How to Use
 1. Create the folder where you'd like to store your media
-2. Put the unzip-pics.py file in the new folder
+2. Put the `unzip-pics.py` file in the new folder
 3. Copy the "Album" folder from the Switch's SD card (Nintendo -> Album) into the new folder
     - if you only want to import specific files or folders, just add them under a folder called "Album"
 4. Run the script
